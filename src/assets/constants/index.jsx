@@ -37,8 +37,8 @@ export const PROJECTS = [
     image: project4,
     description: "A personal portfolio website showcasing projects, skills, and contact information.",
     technologies: ["HTML", "CSS", "React", "Bootstrap", "Tailwind CSS"],
-    liveDemo: "https://example.com/portfolio-live",
-    frontendSourceCode: "https://github.com/username/ecommerce-frontend",
+    liveDemo: "https://sivaprabhakaran-portfolio.netlify.app/",
+    frontendSourceCode: "https://github.com/sivaprabhakar/my-portfolio",
     backendSourceCode: ""
   
   }

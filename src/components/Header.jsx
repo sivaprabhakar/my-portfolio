@@ -60,7 +60,7 @@ function Header() {
             Port<span className='bg-gradient-to-r from-purple-600 via-rose-500 to-red-700 bg-clip-text tracking-tight text-transparent'>folio.</span>
           </h1>
           <ul className={`nav-links ${openMenu ? 'open' : ''}`}>
-            <li><a className="menu-item" href="/">Home</a></li>
+            <li><a className="menu-item" href="#">Home</a></li>
             <li><a className="menu-item" href="#about">About</a></li>
             <li><a className="menu-item" href="#skills">Skills</a></li>
             <li><a className="menu-item" href="#projects">Projects</a></li>

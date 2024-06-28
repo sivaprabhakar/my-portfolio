@@ -15,30 +15,63 @@ const skillsData = [
   { name: 'MySQL', icon: <SiMysql className="text-blue-500" /> },
 ];
 
+const iconVariants = {
+  initial: { y: -10 },
+  animate: {
+    y: [10, -10],
+    transition: {
+      duration: 2.5,
+      ease: "easeInOut",
+      repeat: Infinity,
+      repeatType: "reverse",
+    },
+  },
+};
+
 const Skills = () => {
   return (
-    <motion.div
-    id="skills"
+    <div
+      id="skills"
       className="mt-4 mb-16 text-gray-200 dark:text-gray-100"
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6 }}
     >
-      <h1 className="text-4xl md:text-5xl font-semibold mb-12 text-center">Skills</h1>
-      <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 justify-items-center ">
+      <motion.h1
+        initial={{ opacity: 0, y: -50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7  }}
+        className="text-4xl md:text-4xl font-semibold mb-12 text-center"
+      >
+        Skills
+      </motion.h1>
+      <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 justify-items-center">
         {skillsData.map((skill, index) => (
           <motion.div
             key={index}
-            className="flex flex-col items-center justify-center "
+            className="flex flex-col items-center justify-center"
             whileHover={{ scale: 1.1 }}
-            transition={{ duration: 0.3 }}
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7}}
           >
-            <div className="text-4xl mb-2">{skill.icon}</div>
-            <h2 className="text-lg font-thin">{skill.name}</h2>
+            <motion.div
+              variants={iconVariants}
+              initial="initial"
+              whileInView="animate"
+              className="text-4xl mb-2"
+            >
+              {skill.icon}
+            </motion.div>
+            <motion.h2
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.7, }}
+              className="text-lg font-thin"
+            >
+              {skill.name}
+            </motion.h2>
           </motion.div>
         ))}
       </div>
-    </motion.div>
+    </div>
   );
 };
 
