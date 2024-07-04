@@ -1,0 +1,24 @@
+/* App.css */
+.App {
+    /* Set default dark theme */
+    --bg-color: #2d3748;
+    --text-color: #cbd5e0;
+  
+    /* Additional global styles */
+    min-height: 100vh;
+    overflow-x: hidden;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+  }
+  
+  /* Light theme */
+  .App.light {
+    --bg-color: #ffffff;
+    --text-color: #1a202c;
+  }
+  /* App.css */
+.App {
+    /* Existing styles... */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+  }
+  

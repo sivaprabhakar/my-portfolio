@@ -8,3 +8,6 @@
   font-family: "inter", sans-serif;
 }
 
+body{
+  overflow-x: hidden !important;
+}
