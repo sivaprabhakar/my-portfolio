@@ -1,7 +1,7 @@
 import project1 from "../projects/building-an-ecommerce-website.jpg";
 import project2 from "../projects/movie-tickets-online-booking-on-600nw-1776816215.jpg"
 import project3 from "../projects/dechatapp.jpg";
-import project4 from "../projects/portfolio-update-concept-illustration_114360-4892.jpg";
+// import project4 from "../projects/portfolio-update-concept-illustration_114360-4892.jpg";
 
 
 export const PROJECTS = [
