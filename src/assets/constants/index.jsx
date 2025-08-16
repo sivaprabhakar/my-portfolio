@@ -32,16 +32,16 @@ export const PROJECTS = [
     frontendSourceCode: "https://github.com/sivaprabhakar/chat-app-frontend",
     backendSourceCode: "https://github.com/sivaprabhakar/chat-app-backend",
   },
-  {
-    title: "Personal Portfolio",
-    image: project4,
-    description: "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap", "Tailwind CSS"],
-    liveDemo: "https://sivaprabhakaran-portfolio.netlify.app/",
-    frontendSourceCode: "https://github.com/sivaprabhakar/my-portfolio",
-    backendSourceCode: ""
+  // {
+  //   title: "Personal Portfolio",
+  //   image: project4,
+  //   description: "A personal portfolio website showcasing projects, skills, and contact information.",
+  //   technologies: ["HTML", "CSS", "React", "Bootstrap", "Tailwind CSS"],
+  //   liveDemo: "https://sivaprabhakaran-portfolio.netlify.app/",
+  //   frontendSourceCode: "https://github.com/sivaprabhakar/my-portfolio",
+  //   backendSourceCode: ""
   
-  }
+  // }
 ];
 
 
